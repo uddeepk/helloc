@@ -1,5 +1,7 @@
 #include <stdio.h>
-
+/* This is a comment. 
+   Notice how I can write multiple lines
+   Anyways this program prints a table of Temperatures in Farenheit, and Temperatures in Celsius */
 int main() {
   for (  int n = 0 ; n <= 15 ; ++n ) {
     float tempFarenheit = 20 * n;
