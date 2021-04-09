@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 #define PI 3.214159
+// note that there is no semicolon when defining the magic constants.
 
 int main()
 {
