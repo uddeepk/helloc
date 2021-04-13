@@ -31,6 +31,7 @@ int main()
 	char n = getchar();
 	if ( n == '/') {
 	  // RUn through till '\n'
+	  while (( c = getchar()) != '\n');
 	}
 	else if (  n == '*') {
 	  state = IN_COMMENT;
