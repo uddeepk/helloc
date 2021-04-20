@@ -11,10 +11,11 @@ int main ()
   char* str2 = NULL;
   size_t len = 0;
   ssize_t nread;
+  printf("Enter two strings: \n");
   nread = getline( &str1, &len, stdin);
   nread = getline (&str2, &len, stdin);
   squeeze (str1, str2);
-  printf ( "%s", str1);
+  printf ( "The resulting squeezed string is : %s", str1);
   return 0;
 }
 
