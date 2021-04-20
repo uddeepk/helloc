@@ -12,6 +12,7 @@ int main() {
   size_t len = 0;
   ssize_t nread = 0;
 
+  printf("%s\n", "Enter two string :");
   // Get s1
   nread = getline( &s1, &len, stdin);
   s1[nread - 1] = '\0'; 
@@ -19,7 +20,7 @@ int main() {
   nread = getline( &s2, &len, stdin);
   s2[nread - 1] = '\0';
   // any (s1, s2)
-  printf("%d", any(s1, s2));
+  printf("%d\n", any(s1, s2));
 
   return 0;
 }
