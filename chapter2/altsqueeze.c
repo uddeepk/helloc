@@ -7,12 +7,13 @@ int isInString( char c, char s[]);
 
 int main ()
 {
-  char* str1 = NULL;
-  char* str2 = NULL;
+  char str1 [1000 ]; // = NULL;
+  char str2 [1000] ;//= NULL;
   size_t len = 0;
   ssize_t nread;
   printf("Enter two strings: \n");
   nread = getline( &str1, &len, stdin);
+  printf("%ld", len);
   nread = getline (&str2, &len, stdin);
   squeeze (str1, str2);
   printf ( "The resulting squeezed string is : %s", str1);
