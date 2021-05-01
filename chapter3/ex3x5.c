@@ -8,7 +8,10 @@ void reverse (char* s);
 int main () {
   int inputNumber, base;
   char numberInBase[1000];
-  itob(15, numberInBase, 16);
+  //  itob(15, numberInBase, 16);
+  printf("Input a number, and base :");
+  scanf("%d %d",&inputNumber, &base);
+  itob(inputNumber, numberInBase, base);
   printf("%s\n", numberInBase);
   return 0;
 }
@@ -39,17 +42,17 @@ char getDigit(int n) {
 }
 
 void reverse(char * s) {
-  char *begin, *end, temp;
+  char *begin = s, *end = s, temp;
   int len, i;
 
   len = strlen(s);
-
+  //printf("%d\n",len);
   for ( i = 0 ; i < len - 1; ++i )
     end++;
 
   for ( i = 0 ; i < len / 2 ; ++i) {
     temp = *end;
-    *end = * begin;
+    *end = *begin;
     *begin = temp;
 
     ++begin;
